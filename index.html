@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medohos | Portfolio</title>
+    <meta name="description" content="Personal portfolio of medohos">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    
+    <nav class="glass-nav">
+        <div class="logo">medohos.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content fade-in">
+                <h1>Hi, I'm <span class="gradient-text">medohos</span></h1>
+                <p class="subtitle">Crafting Digital Experiences</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card about-card">
+                <p>I am a passionate developer focusing on building modern, performant, and beautiful digital experiences. With a keen eye for design and strong technical skills, I bring ideas to life.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-card">
+                    <h3>Frontend</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="glass-card skill-card">
+                    <h3>Backend</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="glass-card skill-card">
+                    <h3>UI/UX Design</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="project-img placeholder-1"></div>
+                    <h3>Project Alpha</h3>
+                    <p>A next-gen web application with stunning UI.</p>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="project-img placeholder-2"></div>
+                    <h3>Project Beta</h3>
+                    <p>An innovative e-commerce platform.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="glass-card contact-card">
+                <form id="contact-form">
+                    <input type="hidden" name="_subject" value="📩 New Message from Portfolio Website">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="Sender Name" placeholder="Name" required>
+                    <input type="email" name="Sender Email" placeholder="Email (e.g. name@gmail.com)" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address ending with @domain.com" required>
+                    <textarea name="Message Content" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" id="submit-btn" class="btn primary-btn w-full">Send Message</button>
+                    <div id="form-status" style="margin-top: 15px; text-align: center; font-size: 0.95rem; display: none;"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
